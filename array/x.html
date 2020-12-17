@@ -1,0 +1,28 @@
+<html>
+<body>
+	<h1>Javscript Array</h1>
+	<p>The lowest number is:<span id="demo"></span></p>
+
+
+	<script>
+		var nums=[10,87,56,76,34,54];
+		document.getElementById("demo").innerHTML=myArrayMin(nums);
+        //myArrayMin method
+		function myArrayMin(arr)
+		{
+			var len=arr.length;
+			var min=Infinity;
+
+			while(len--)
+			{
+				if(arr[len]<min)
+				{
+					min=arr[len];
+				}
+			}
+			return min;
+		}
+
+	</script>
+	</body>
+</html>

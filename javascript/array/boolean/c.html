@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<p>Display the Boolean value of zero,undefined,null,NaN,-zero,false and empty string is false:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() 
+ {
+  var x = 0;
+  var y="";
+  var z;
+  var e=-0;
+  var f=null;
+  var g=false;
+  var h=NaN;
+  document.getElementById("demo").innerHTML = Boolean(x)+"<br>"+Boolean(y)+"<br>"+Boolean(z)+"<br>"+Boolean(e)+"<br>"+Boolean(f)+"<br>"+Boolean(g)+"<br>"+Boolean(h);
+ }
+</script>
+
+</body>
+</html>

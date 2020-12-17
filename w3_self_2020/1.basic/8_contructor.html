@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<h1>Class, Construtor & methods example...</h1>
+	<h2 id="demo"></h2>
+	<script type="text/javascript">
+		class Person {
+			constructor(fname, lname){
+				this.fname = fname;
+				this.lname = lname;
+			}
+			getPerson(){                          //dont write here function keyword o.w its gentrate error....
+				return this.fname+" "+this.lname;				
+			}
+		}
+		person = new Person("Hitesh", "Ahire");
+		document.getElementById("demo").innerHTML = person.getPerson();
+	</script>
+</body>
+</html>

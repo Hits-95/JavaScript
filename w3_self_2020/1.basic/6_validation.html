@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>validate numeric input</title>
+	<script type="text/javascript">
+		myFun = function(){
+			var x, text;
+			//get data from input...
+			 x = document.getElementById("number").value;
+			//If x is Not a Number or less than one or greater than 10 
+			if(isNaN(x) || x < 1 || x > 1)
+				text = "Input not valid.";
+			else
+				text = "input ok";
+			document.getElementById("demo").innerHTML = text;
+		
+		}
+	</script>
+</head>
+<body>
+	<h3>Plase enter 1 to 10 number</h3>
+	<input id="number" />	
+	<p id="demo"></p>
+	<button type = "button" onclick = "myFun()">Submit</button>
+</body>
+</html>

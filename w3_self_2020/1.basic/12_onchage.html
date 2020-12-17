@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>onchange method</title>
+	<script type="text/javascript">
+		function myFunOver(){
+			var tmp = document.getElementById("fname");
+			tmp.value = tmp.value.toUpperCase();
+		}
+		function myFunOut(){
+			var tmp = document.getElementById("fname");
+			tmp.value = tmp.value.toLowerCase();
+		}
+	</script>
+</head>
+<body>
+	<h2> onchange method used...</h2>
+	<br />
+	Enter your y : <input type="text" id="fname" onmouseover = "myFunOver()" onmouseout = "myFunOut()" />
+</body>
+</html>

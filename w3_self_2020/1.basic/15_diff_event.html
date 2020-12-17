@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<h2> Javascript diff event on addEventListener </h2>
+	<button id="myBtn"> click </button>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById("myBtn").addEventListener("click", function() {
+			document.getElementById("demo").innerHTML += "click<br>";
+			console.log(" click ");
+			
+		});
+		
+		document.getElementById("myBtn").addEventListener("mouseover", function() {
+			document.getElementById("demo").innerHTML += "mouseover<br>";
+			console.log(" mouseover ");
+		});
+		
+		document.getElementById("myBtn").addEventListener("mouseout", function() {
+			document.getElementById("demo").innerHTML += "mouseout<br>";
+			console.log(" mouseout ");
+		});
+		
+		window.addEventListener("resize", function() {
+			document.getElementById("demo").innerHTML += "resize<br>";
+			console.log(" resize ");
+		});
+		
+	</script>
+</body>
+</html>

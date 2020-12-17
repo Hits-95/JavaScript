@@ -1,0 +1,18 @@
+<html>
+<body>
+	<h1>Javascript Array</h1>
+	<p id="demo">reduce() method</p>
+    
+	<script>
+		var num1=[10,20,34,56,78,89];
+		var num2=num1.reduce(myfunction);//runs a function on each array element to produce (reduce it to) a single value.
+		//reduce method can be used in two reduceRight() and reduceLeft()
+		document.getElementById("demo").innerHTML=num2;
+
+		function myfunction(total,value,index,array)
+		{
+			return total+value;
+		}
+	</script>
+	</body>
+</html>

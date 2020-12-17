@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Apply Method</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var person = {
+			fullName : function(city, age){
+				return this.fullname + " "+this.lastname+","+ city +","+age;
+			}
+		}
+		var Person1 = {
+			fullname : "Hitesh",
+			lastnmae : "Ahire"
+		}
+		var Person12 = {
+			fullname : "Sakshi",
+			lastname : "Aher"		
+		}
+		document.getElementById("demo").innerHTML = person.fullName.apply(Person12, ["Vadali", 21]);
+	</script>
+</body>
+</html>

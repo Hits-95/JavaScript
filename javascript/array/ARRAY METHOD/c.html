@@ -1,0 +1,17 @@
+<html>
+<body>
+	<h1>Javascript Array</h1>
+	<p id="demo">filter() method</p>
+
+	<script>
+		var num1=[10,34,56,78,90];
+		var num2=num1.filter(myfunction);//creates a new array with test ,testing condition can be used in function
+		document.getElementById("demo").innerHTML=num2;
+
+		function myfunction(value,index,array)
+		{
+			return value<50; //test
+		}
+	</script>
+	</body>
+</html>

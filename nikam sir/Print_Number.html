@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script>
+			function showNumber(){
+				var a = document.form1.temp1.value;
+				switch(a){
+					case '1' :document.form1.temp2.value = 'One';
+					break;
+					case '2' :document.form1.temp2.value = "Two";
+					break;
+					case '3' :document.form1.temp2.value = "Three";
+					break;
+					case '4' :documet.form1.temp2.value = "Four";
+					break;
+					case '5' :document.form1.temp2.value = "Five";
+					break;
+					case '6' :document.form1.temp2.value = "Six";
+					break;
+					case '7' :document.form1.temp2.value = "Seven";
+					break;
+					case '8' :documet.form1.temp2.value = "Eight";
+					break;
+					case '9' :document.form1.temp2.value = "Nine";
+					break;
+					case '10' :document.form1.temp2.value = "Ten";
+					break;
+				}
+			}
+		</script>
+		<body>
+			<form name = "form1">
+				Enter Number :: <input type = "text" name = "temp1" ><br><br>
+				In Word :: <input type = "text" name = "temp2">
+					<input type = "button" onclick = "showNumber();" Value = "Result">
+			</form>
+		</body>
+	</head>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<body>
+	<h1>Javscript Array</h1>
+	<p>The lowest number is<span id="demo"></span></p>
+
+	
+
+	<script>
+		//find lowest number in array
+		var nums=[10,2,34,56,78,98,55,43];
+			nums.sort(function(a,b)
+			{
+				return a-b;
+			})
+			document.getElementById("demo").innerHTML=nums[0];
+	</script>
+	</body>
+</html>

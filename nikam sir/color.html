@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script>
+			function onB1(){
+				document.form1.style.background-color = "red";
+			}
+			function offB1(){
+				document.form1.style.background-color = "green";
+			}
+			function onB2(){
+				document.form1.style.background-color = "bulue";
+			}
+			function offB2(){
+				document.form1.style.background-color = "green";
+			}
+		</script>
+		<body>
+			<form name = "form1">
+				<input type = "button" name = "b1" value = "ON" onmousedown = "offB1();" onmouseover = "onB1();">
+				<input type = "button" name = "b2" value = "OFF" onmousedown = "offB2();" onmouseover = "offB2();">
+			</form>
+		</body>
+	</head>
+</html>

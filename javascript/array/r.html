@@ -1,0 +1,22 @@
+<html>
+<body>
+	<h1>Javsscript Array</h1>
+	<p id="demo">Sort the numbers in ascending order</p>
+	<button onclick="myfunction()">Click it</button>
+
+	<script>
+		var nums=[10,20,45,67,89,54,56,901];
+		document.getElementByid("demo").innerHTML=nums;
+
+		function myfunction()
+		{
+			nums.sort();//Ascending order
+			//nums.sort(function(a,b)
+				//{
+					//return a-b;
+				//});
+			document.getElementById("demo").innerHTML=nums;
+		}
+	</script>
+	</body>
+</html>

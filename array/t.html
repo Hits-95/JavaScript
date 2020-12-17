@@ -1,0 +1,31 @@
+<html>
+<body>
+	<h1>Javscript Array</h1>
+	<p id="demo">sort the element in ascendiong order alphabetically or numerically</p>
+
+	<button onclick="myfunction1()">asc alphabetiacally</button>
+	<button onclick="myfunction2()">asc numerically</button>
+
+	<script>
+		var nums=[10,98,67,54,345,54,23,456];
+		document.getElementById("demo").innerHTML=nums;
+
+        //arrange in alphabetically
+		function myfunction1()
+		{
+			nums.sort();
+			document.getElementById("demo").innerHTML=nums;
+		}
+
+        //arrange sorting numeriacally
+		function myfunction2()
+		{
+			nums.sort(function(a,b)
+			{
+				return a-b;
+			})
+			document.getElementById("demo").innerHTML=nums;
+		}
+	</script>
+	</body>
+</html>

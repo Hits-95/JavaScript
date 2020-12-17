@@ -1,0 +1,28 @@
+<html>
+<body>
+	<h1>Javscript Array</h1>
+	<p>The Highest number is:<span id="demo"></span></p>
+
+
+	<script>
+		var nums=[10,87,56,76,34,54];
+		document.getElementById("demo").innerHTML=myArrayMax(nums);
+        //myArrayMax method
+		function myArrayMax(arr)
+		{
+			var len=arr.length;
+			var max=-Infinity;
+
+			while(len--)
+			{
+				if(arr[len]>max)
+				{
+					max=arr[len];
+				}
+			}
+			return max;
+		}
+
+	</script>
+	</body>
+</html>

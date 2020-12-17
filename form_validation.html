@@ -1,0 +1,22 @@
+<html>
+  <head>
+	<script type="text/javascript">
+		function isValide(){
+			var user = document.getElementById("user").value;
+			var pass = document.getElementById("pass").value;
+			
+			if(user == "1")
+				if(pass == "1"){
+					alert("Valide user.");
+					window.location.href = 'teal.jsp";
+					}
+						
+			}
+	</script>
+  </head>
+	<body>	
+	 Enter User-Name :: <input type="text" name="username" id="user"><br>
+	 Enter Pass-Word :: <input type="password" name="password" id="pass"><br>
+	 <input type="button" value="Check Form" onclick="isValide();">
+	</body>
+</html>

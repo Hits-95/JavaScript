@@ -1,0 +1,19 @@
+<html>
+<body>
+	<h1>Javscript String</h1>
+	<h4>String replace</h4>
+	<p id="demo">Welcome to Mumbai</p>
+
+	<button onclick="myfunction()">Clcik it</button>
+
+	<script>
+		function myfunction()
+		{
+		var str=document.getElementById("demo").innerHTML;
+		var txt=str.replace("Mumbai","Delhi");
+		var str1=document.getElementById("demo").innerHTML=txt;
+	}
+	</script>
+	</body>
+
+</html>

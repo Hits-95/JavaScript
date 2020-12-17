@@ -1,0 +1,17 @@
+<html>
+<body>
+	<h1>Javscript Map() function</h1>
+	<p id="demo">Creates a new array by performing a function on each array element.</p>
+
+	<script>
+		var num1=[10,20,45,67,50];
+		var num2=num1.map(myfunction);//creates a new array
+		document.getElementById("demo").innerHTML=num2;
+
+		function myfunction(value,index,array)
+		{
+			return value*2;
+		}
+	</script>
+	</body>
+</html>

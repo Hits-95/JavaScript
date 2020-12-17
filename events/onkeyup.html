@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeyup</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function myFun(){
+            //document.forms[0].input2.value = document.forms[0].input1.value;
+            document.getElementById('input2').value = document.getElementById('input1').value;
+            console.log(document.getElementById('input1').value);
+        }
+    </script>
+    <form action="">
+        Enter name : <input type="text" name="input1" id="input1" size="20" onkeyup="myFun()">
+        <hr>
+        Out Put : <input type="text" name="input2" id="input2">
+    </form>
+</body>
+</html>

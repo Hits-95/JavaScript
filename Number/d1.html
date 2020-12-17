@@ -1,0 +1,23 @@
+<html>
+<body>
+	<h1>Javscript new Date()</h1>
+    <p id="demo">Print Date,set year</p>	
+
+    <script>
+    	var d=new Date();
+    	d.setFullYear(2020);
+    	var day=["sun","mon","tue","wed","thu","fri","sat"];
+    	document.getElementById("demo").innerHTML=d+"<br>"+d.getFullYear()+"<br>"+d.toUTCString()+"<br>"+d.getDay()+"<br>"+day[d.getDay()];
+
+    	//The getFullYear() method returns the full year of a date:
+
+    	//The setFullYear() method sets the year of a date object:
+
+    	//The toUTCString() method converts a date to a UTC string (a date display standard):
+
+    	//The getDay() method returns the weekday as a number:
+
+    	//The day[d.getDay()] method returns the weekday as a number:
+    </script>	
+	</body>
+</html>

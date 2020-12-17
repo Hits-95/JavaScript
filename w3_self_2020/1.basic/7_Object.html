@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Object Test</title>
+</head>
+<body>
+	<h1>Example of object, this keyword </h1>
+	<p id="demo"></p>
+	
+	<script type="text/javascript">
+		//create object...
+		var Person = {
+			id    : 01,
+			fname : "Hitesh",
+			lname : "Ahire",
+			age   : 21,
+			bdate : new Date(),
+			getPerson : function(){
+				return this.id + " " + this.fname + " " + this.lname + " " +this. age;
+			}
+		};
+		// display data from object....
+		document.getElementById("demo").innerHTML = JSON.stringify(Person);
+	</script>
+<body>
+</html>

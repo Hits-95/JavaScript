@@ -1,0 +1,23 @@
+<html>
+<body>
+	<h1>Javscripy Array</h1>
+	<p id="demo">Sorts the element in descending order</p>
+
+	<button onclick="myfunction()">Click it</button>
+
+	<script>
+		var a=["Shruti","Bhagi","Bhavna","Soniya","Tinu","jyotsna"];
+		document.getElementById("demo").innerHTML=a;
+
+		function myfunction()
+		{
+			//first sort the array:
+			a.sort();
+			//and then reverse the array
+			a.reverse();//reverse are use for the element can be arrange in descending order
+			document.getElementById("demo").innerHTML=a;
+
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<body>
+	<h1>Javascript Array</h1>
+	<p id="demo">every() method</p>
+
+	<script>
+		var num1=[10,34,56,78,90];
+		var num2=num1.every(myfunction);//The every() method checks if all array values pass a test.</p>
+
+		document.getElementById("demo").innerHTML="num2 is false:"+num2;
+
+		function myfunction(value,index,array)
+		{
+			return value>10; //test
+		}
+	</script>
+	</body>
+</html>

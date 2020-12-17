@@ -1,0 +1,19 @@
+<HTML>
+	<HEAD>
+		<script type="text/javascript">
+			function add(){
+				var a = parseInt(document.form1.t1.value);
+				var b = parseInt(document.form1.t2.value);
+				document.form1.t3.value = a+b;
+			}
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+		<form name = "form1">
+			First Number  :: <INPUT type = "text" name = "t1" ><BR>
+			Socond Number :: <INPUT type = "text" name = "t2" ><BR>
+			Result :: <INPUT type = "text" name = "t3" ><BR>
+		</form>	
+    <INPUT type = "button" value = "Add" onclick = "add();" >
+	</BODY>
+</HTML>

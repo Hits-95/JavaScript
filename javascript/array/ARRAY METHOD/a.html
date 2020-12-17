@@ -1,0 +1,20 @@
+<html>
+<body>
+	<h1>Javscript Array</h1>
+	<p id="demo">forEach() method</p>
+
+	<script>
+		var txt="";
+		var num=[10,34,56,78,98];
+		num.forEach(myfunction);//Calls a function once for each array element
+		document.getElementById("demo").innerHTML=txt;
+
+		function myfunction(value)
+		{
+			txt=txt+value+"<br>";
+
+		}
+
+	</script>
+	</body>
+</html>

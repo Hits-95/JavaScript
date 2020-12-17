@@ -1,0 +1,23 @@
+<html>
+<body>
+	<h1>Javscript Array</h1>
+	<p id="demo">sort the array in random order</p>
+
+	<button onclick="myfunction()">Click it</button>
+
+	<script>
+		var nums=[234,10,67,87,45,67,34];
+		document.getElementById("demo").innerHTML=nums;
+        
+        //sort the array in random order
+		function myfunction()
+		{
+			nums.sort(function(a,b)
+			{
+				return 0.5*Math.random();
+			})
+			document.getElementById("demo").innerHTML=nums;
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<body>
+	<h1>Javascript Random Number</h1>
+	<p id="demo">Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 10 (both included):</p>
+
+	<button onclick="document.getElementById('demo').innerHTML=getRndInteger(1,10)">Click it</button>
+
+	<script>
+		function getRndInteger(max,min)
+		{
+			return Math.floor(Math.random()*(max-min+1))+min;
+		}
+	</script>
+
+	</body>
+</html>
